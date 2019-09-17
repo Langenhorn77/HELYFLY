@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HELYFLY</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="page-header container">
+  <svg class="page-header__logo">
+    <use xlink:href="#logo"></use>
+  </svg>
+  <a class="page-header__city" href="#">Москва</a>
+  <a class="page-header__phone" href="#">Телефон: 8(800)-123-12-12</a>
+  <button class="page-header__login" type="button">
+  </button>
+</header>
+<main>
+  <h1 class="visually-hidden">Фотосессия</h1>
+  <section class="exclusive">
+    <div class="container">
+      <h2 class="exclusive__name">Эксклюзивная <span>фотосессия</span> при полете на&nbsp;вертолете</h2>
+      <div class="exclusive__price">
+        <p class="exclusive__price-number">Стоимость: <span>1500₽</span></p>
+        <p class="exclusive__price-percent">%</p>
+      </div>
+      <button class="exclusive__booking" type="button">
+        Забронировать место
+      </button>
+    </div>
+  </section>
+  <section class="photo-session container">
+    <h2 class="photo-session__name">Фотосессия в&nbsp;вертолете</h2>
+    <div class="photo-session__video">
+      <div class="photo-session__video--img">
+        <img src="img/video.png" height="197" width="290" alt="Видео"/>
+      </div>
+      <div class="photo-session__video--iframe disabled">
+        <iframe width="290" height="197" src="https://www.youtube.com/embed/4JS70KB9GS0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <p class="photo-session__text">Полет на вертолете это прекрасная
+      возможность получить новые
+      ощущения! А наш замечательный
+      фотограф запечатлит лучшие моменты!</p>
+    <ul class="photo-session__list description">
+      <li class="description__item description__item--time">3 часа съемки</li>
+      <li class="description__item description__item--lang">
+        <span class="description__text-mobile">Русский</span><span class="description__text-desktop">Готовы ответить на любые вопросы</span>
+      </li>
+      <li class="description__item description__item--price">от 850$</li>
+      <li class="description__item description__item--place">
+        <span class="description__text-mobile">Дубаи</span><span class="description__text-desktop">Москва</span></li>
+      <li class="description__item description__item--photos">Более 50 фотографий</li>
+      <li class="description__item description__item--reviews"><span>Более 150 отзывов с оценкой</span></li>
+    </ul>
+  </section>
+  <section class="photos">
+    <h2 class="photos__name">Фотографии пакета<span>:</span></h2>
+    <ul class="photos__list">
+      <li class="photos__item"><img src="img/photo-1.png" height="185" width="277" alt="Фото-1"/></li>
+      <li class="photos__item"><img src="img/photo-2.png" height="185" width="277" alt="Фото-2"/></li>
+      <li class="photos__item"><img src="img/photo-3.png" height="185" width="277" alt="Фото-3"/></li>
+      <li class="photos__item"><img src="img/photo-4.png" height="185" width="277" alt="Фото-4"/></li>
+      <li class="photos__item"><img src="img/photo-1.png" height="185" width="277" alt="Фото-5"/></li>
+      <li class="photos__item"><img src="img/photo-2.png" height="185" width="277" alt="Фото-6"/></li>
+      <li class="photos__item"><img src="img/photo-3.png" height="185" width="277" alt="Фото-7"/></li>
+      <li class="photos__item"><img src="img/photo-4.png" height="185" width="277" alt="Фото-8"/></li>
+      <li class="photos__item visually-hidden"><img src="img/photo-4.png" height="185" width="277" alt="Фото-9"/></li>
+      <li class="photos__item visually-hidden"><img src="img/photo-1.png" height="185" width="277" alt="Фото-10"/></li>
+      <li class="photos__item visually-hidden"><img src="img/photo-2.png" height="185" width="277" alt="Фото-11"/></li>
+      <li class="photos__item visually-hidden"><img src="img/photo-3.png" height="185" width="277" alt="Фото-12"/></li>
+      <li class="photos__item visually-hidden"><img src="img/photo-4.png" height="185" width="277" alt="Фото-13"/></li>
+    </ul>
+    <button class="photos__show-button btn-more">Показать все фото</button>
+    <div class="photos__wrapper">
+      <div class="photos__person">
+        <img src="img/person.png" height="139" width="139" alt="Фотограф"/>
+        <h3>Марина Иванова</h3>
+        <p>Фотограф</p>
+        <a href="#">Показать больше информации о фотографе</a>
+      </div>
+      <div class="photos__about">
+        <h3>Об организаторе:</h3>
+        <p>Всем привет! Я фотограф Мария!
+          И по мимо фотосъемки я так же являюсь членом группы экспертов туристической отрасли,
+          которые хорошо разбираются в&nbsp;маркетинге, операциях и&nbsp;услугах обслуживания клиентов,
+          специализирующихся на&nbsp;совместном использовании и&nbsp;частных турах. </p>
+        <p>Сначала мы (я и моя команда)
+          изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и
+          планам клиента. Мы&nbsp;никогда не зависим от&nbsp;субпоставщиков и&nbsp;не&nbsp;свяжемся…</p>
+        <button class="photos__about-button btn-more">Читать еще</button>
+      </div>
+      <div class="photos__grant">
+        <h3>Что я предоставлю:</h3>
+        <p>Встречу вас на машине после длительного перелёта. Качественный подбор места и&nbsp;локации для вашей съемки.
+          При&nbsp;необходимости всегда возможно&nbsp;прерваться на&nbsp;обед/ужин.<br/>
+          Более 50 фотографий на выходе с обработкой и замечательные впечатления о Дубае !</p>
+        <button class="photos__grant-button btn-more">Читать еще</button>
+      </div>
+    </div>
+  </section>
+  <section class="sign container">
+    <h2 class="sign__name">Доступная съемка в&nbsp;ближайщее время</h2>
+    <table class="sign__table">
+      <tr>
+        <th class="sign__table-item">Пятница, 14 сентября</th>
+      </tr>
+      <tr>
+        <td class="sign__table-item">
+          <p class="sign__time">15:00 - 18:00</p>
+          <p class="sign__price">
+            <span class="sign__price--mobile">850$</span><span class="sign__price--desktop">1500₽</span></p>
+          <p class="sign__left">Осталось — 1 место</p>
+          <button class="sign__choose">Выбрать</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="sign__table-item">
+          <p class="sign__time">19:00 - 22:00</p>
+          <p class="sign__price">
+            <span class="sign__price--mobile">850$</span><span class="sign__price--desktop">1500₽</span></p>
+          <p class="sign__left">Осталось — 1 место</p>
+          <button class="sign__choose">Выбрать</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="sign__table-item sign__table-item--reviews">
+          <div class="description__item--reviews">
+            <span>Более 150 отзывов с оценкой</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </section>
+  <section class="map">
+    <div class="map__wrapper">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CGWizS0k" width="560" height="400" allowfullscreen></iframe>
+    </div>
+    <div class="map__info">
+      <div class="map__slider slider">
+        <button class="slider__arrow slider__arrow--left" type="button">
+          <svg>
+            <use xlink:href="#arrow"></use>
+          </svg>
+        </button>
+        <button class="slider__arrow slider__arrow--right" type="button">
+          <svg>
+            <use xlink:href="#arrow"></use>
+          </svg>
+        </button>
+        <div class="slider__item slider__item--active">
+          <p class="slider__number">1</p>
+          <div class="slider__wrapper">
+            <p class="slider__question">Где встречаемся?</p>
+            <p class="slider__answer">Москва</p>
+          </div>
+        </div>
+        <div class="slider__item">
+          <p class="slider__number">2</p>
+          <div class="slider__wrapper">
+            <p class="slider__question">Время съемки</p>
+            <p class="slider__answer">3 часа</p>
+          </div>
+        </div>
+        <div class="slider__item">
+          <p class="slider__number">3</p>
+          <div class="slider__wrapper">
+            <p class="slider__question">Мест осталось:</p>
+            <p class="slider__answer">2 места</p>
+          </div>
+        </div>
+      </div>
+      <div class="map__person">
+        <img src="img/person.png" height="67" width="67" alt="Фотограф"/>
+        <div class="map__person-wrapper">
+          <h3>Мария Иванова</h3>
+          <p>Фотограф</p>
+          <a href="#">Показать больше информации <span>о&nbsp;фотографе</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reviews container">
+    <h2 class="reviews__name">Отзывы<span>:</span></h2>
+    <ul class="reviews__list">
+      <li class="reviews__item">
+      <div class="reviews__item-user">
+        <img src="img/avatar-1.png" height="84" width="84" alt="Аватар пользователя"/>
+        <div class="reviews__wrapper">
+          <p class="reviews__user-name">Валерия Антонова</p>
+          <p class="reviews__user-work">Арт-директор</p>
+        </div>
+      </div>
+      <button class="reviews__again">Супер! Я бы заказала съемку снова!</button>
+      <p class="reviews__comment">Хотим выразить огромную благодарность вашей компании!
+        Получили море ощущений, все прошло просто замечательно.
+        Фотки получились великолепные, отдельное спасибо фотографу!</p>
+      <p class="reviews__date">27 Апреля, 2019г.</p>
+    </li>
+      <li class="reviews__item">
+        <div class="reviews__item-user">
+          <img src="img/avatar-2.png" height="84" width="84" alt="Аватар пользователя"/>
+          <div class="reviews__wrapper">
+            <p class="reviews__user-name">Виталий Петров</p>
+            <p class="reviews__user-work">Фотограф</p>
+          </div>
+        </div>
+        <button class="reviews__again">Супер! Я бы заказал съемку снова!</button>
+        <p class="reviews__comment reviews__comment--second">Восторг! :) Очень понравилось :)
+          Захватили последний теплый, солнечный октябрьский день :)
+          Впечатлило всё: сам вертолет, взлет, полёт, приземление. <br>
+          Организация полёта отличная. Спасибо!</p>
+        <p class="reviews__date">19 Апреля, 2019г.</p>
+      </li>
+      <li class="reviews__item reviews__item--third">
+        <div class="reviews__item-user">
+          <img src="img/avatar-3.png" height="84" width="84" alt="Аватар пользователя"/>
+          <div class="reviews__wrapper">
+            <p class="reviews__user-name">Джим Керри</p>
+            <p class="reviews__user-work"></p>
+          </div>
+        </div>
+        <button class="reviews__again">Супер! Я бы заказал съемку снова!</button>
+        <p class="reviews__comment ">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски
+          были вкусными и сытными))Мы с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!))
+          А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все
+          равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
+        <p class="reviews__date">11 Апреля, 2019г.</p>
+      </li>
+      <li class="reviews__item visually-hidden reviews__item--third">
+        <div class="reviews__item-user">
+          <img src="img/avatar-3.png" height="84" width="84" alt="Аватар пользователя"/>
+          <div class="reviews__wrapper">
+            <p class="reviews__user-name">Джим Керри</p>
+            <p class="reviews__user-work"></p>
+          </div>
+        </div>
+        <button class="reviews__again">Супер! Я бы заказал съемку снова!</button>
+        <p class="reviews__comment ">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски
+          были вкусными и сытными))Мы с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!))
+          А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все
+          равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
+        <p class="reviews__date">11 Апреля, 2019г.</p>
+      </li>
+      <li class="reviews__item visually-hidden">
+        <div class="reviews__item-user">
+          <img src="img/avatar-1.png" height="84" width="84" alt="Аватар пользователя"/>
+          <div class="reviews__wrapper">
+            <p class="reviews__user-name">Валерия Антонова</p>
+            <p class="reviews__user-work">Арт-директор</p>
+          </div>
+        </div>
+        <button class="reviews__again">Супер! Я бы заказала съемку снова!</button>
+        <p class="reviews__comment">Хотим выразить огромную благодарность вашей компании!
+          Получили море ощущений, все прошло просто замечательно.
+          Фотки получились великолепные, отдельное спасибо фотографу!</p>
+        <p class="reviews__date">27 Апреля, 2019г.</p>
+      </li>
+      <li class="reviews__item visually-hidden">
+        <div class="reviews__item-user">
+          <img src="img/avatar-2.png" height="84" width="84" alt="Аватар пользователя"/>
+          <div class="reviews__wrapper">
+            <p class="reviews__user-name">Виталий Петров</p>
+            <p class="reviews__user-work">Фотограф</p>
+          </div>
+        </div>
+        <button class="reviews__again">Супер! Я бы заказал съемку снова!</button>
+        <p class="reviews__comment reviews__comment--second">Восторг! :) Очень понравилось :)
+          Захватили последний теплый, солнечный октябрьский день :)
+          Впечатлило всё: сам вертолет, взлет, полёт, приземление. <br>
+          Организация полёта отличная. Спасибо!</p>
+        <p class="reviews__date">19 Апреля, 2019г.</p>
+      </li>
+      <li class="reviews__item visually-hidden">
+        <div class="reviews__item-user">
+          <img src="img/avatar-1.png" height="84" width="84" alt="Аватар пользователя"/>
+          <div class="reviews__wrapper">
+            <p class="reviews__user-name">Валерия Антонова</p>
+            <p class="reviews__user-work">Арт-директор</p>
+          </div>
+        </div>
+        <button class="reviews__again">Супер! Я бы заказала съемку снова!</button>
+        <p class="reviews__comment">Хотим выразить огромную благодарность вашей компании!
+          Получили море ощущений, все прошло просто замечательно.
+          Фотки получились великолепные, отдельное спасибо фотографу!</p>
+        <p class="reviews__date">27 Апреля, 2019г.</p>
+      </li>
+      <li class="reviews__item visually-hidden">
+        <div class="reviews__item-user">
+          <img src="img/avatar-2.png" height="84" width="84" alt="Аватар пользователя"/>
+          <div class="reviews__wrapper">
+            <p class="reviews__user-name">Виталий Петров</p>
+            <p class="reviews__user-work">Фотограф</p>
+          </div>
+        </div>
+        <button class="reviews__again">Супер! Я бы заказал съемку снова!</button>
+        <p class="reviews__comment reviews__comment--second">Восторг! :) Очень понравилось :)
+          Захватили последний теплый, солнечный октябрьский день :)
+          Впечатлило всё: сам вертолет, взлет, полёт, приземление. <br>
+          Организация полёта отличная. Спасибо!</p>
+        <p class="reviews__date">19 Апреля, 2019г.</p>
+      </li>
+    </ul>
+    <button class="reviews__show btn-more">Показать Все (<span class="reviews__number">134</span>)</button>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper-top container">
+    <svg class="page-footer__logo">
+      <use xlink:href="#logo"></use>
+    </svg>
+    <ul class="page-footer__social social">
+      <li><a class="social__link" href="#"><img src="img/vk.svg" width="26" height="16" alt="Вконтакте"></a></li>
+      <li><a class="social__link" href="#"><img src="img/facebook.svg" width="27" height="26" alt="Facebook"></a></li>
+      <li><a class="social__link" href="#"><img src="img/instragram.svg" width="26" height="26" alt="Instagram"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="page-footer__wrapper-bottom">
+    <div class="page-footer__info container">
+      <ul class="page-footer__payment payment">
+        <li><a href="#" class="payment__link"><img src="img/MC.svg" width="34" height="21" alt="MasterCard"></a></li>
+        <li><a href="#" class="payment__link"><img src="img/VISA.svg" width="33" height="23" alt="Visa"></a></li>
+        <li><a href="#" class="payment__link"><img src="img/PP.svg" width="34" height="23" alt="PayPal"></a></li>
+      </ul>
+      <p class="page-footer__copyright">Тех. поддержка: 8(800)700-00-00 <br>
+        © 2018 HELYFLY. All Rights Reserved.
+      </p>
+      <button class="page-footer_lang">RU</button>
+    </div>
+  </div>
+</footer>
+<div class="overlay"></div>
+<section class="popup">
+  <div class="popup__window">
+    <h2 class="popup__name">Бронирование</h2>
+    <button class="popup__close" type="button"></button>
+    <form class="popup__form" action="#" method="post">
+      <p class="popup__form-item">
+        <label class="popup__date" for="date">Дата<span>*</span></label>
+        <input type="text" id="date" placeholder="14.09.2019" required/>
+      </p>
+      <p class="popup__form-item">
+        <label for="email">Email<span>*</span></label>
+        <input type="email" id="email" placeholder="Электронная почта" required/>
+      </p>
+      <p class="popup__form-item">
+        <label for="name">Имя<span>*</span></label>
+        <input type="text" id="name" placeholder="Иван" required/>
+      </p>
+      <p class="popup__form-item">
+        <label for="surname">Фамилия<span>*</span></label>
+        <input type="text" id="surname" placeholder="Громов" required/>
+      </p>
+      <p class="popup__form-item">
+        <label for="tel">Телефон<span>*</span></label>
+        <input type="tel" id="tel" placeholder="+7 (905) 184-81-40" required/>
+      </p>
+      <p class="popup__form-item popup__form-item--card">
+        <label>Данные карты<span>*</span></label>
+        <input type="text" id="card" placeholder="Номер карты" required/>
+        <input type="text" id="term" placeholder="Срок действия" required/>
+        <input type="text" id="cvv" placeholder="CVV" required/>
+      </p>
+      <p class="popup__form-item popup__form-item--check">
+        <input type="checkbox" id="check" class="visually-hidden popup__checkbox" required/>
+        <label for="check">
+          <span class="checkbox-indicator"></span>
+          Я согласен с&nbsp;пользовательским соглашением и&nbsp;публичной офертой
+        </label>
+      </p>
+      <button type="submit" class="popup__form-button">Забронировать</button>
+    </form>
+  </div>
+</section>
+<svg style="display:none;">
+  <symbol viewBox="0 0 84 16" id="logo">
+    <path d="M0 0.00219727V15.3369H1.98886V8.31388H9.86057V15.3369H11.8494V0.00219727H9.86057V6.59571H1.98886V0.00219727H0ZM15.1087 0.00219727V15.3369H25.4926V13.6188H17.0975V8.31388H24.8646V6.59571H17.0975V1.72038H25.4298V0.00219727H15.1087ZM27.9071 0.00219727V15.3369H37.8095V13.6188H29.8959V0.00219727H27.9071ZM43.3853 9.06559L49.1007 0.00219727H46.8397L42.4642 7.30446L37.984 0.00219727H35.6183L41.3965 9.06559V15.3369H43.3853V9.06559ZM50.7847 0.00219727V15.3369H52.7735V8.31388H59.6404V6.59571H52.7735V1.72038H60.6034V0.00219727H50.7847ZM62.8062 0.00219727V15.3369H72.7086V13.6188H64.795V0.00219727H62.8062ZM78.2846 9.06559L84 0.00219727H81.739L77.3635 7.30446L72.8833 0.00219727H70.5176L76.2958 9.06559V15.3369H78.2846V9.06559Z" fill="black"/>
+  </symbol>
+  <symbol viewBox="0 0 11 19" id="arrow">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.361709 8.56006L7.90971 0.390137C8.01882 0.267464 8.15267 0.169283 8.30244 0.102051C8.45222 0.0348184 8.61453 -6.09025e-08 8.7787 -5.37261e-08C8.94288 -4.65498e-08 9.1052 0.0348184 9.25497 0.102051C9.40475 0.169283 9.5386 0.267464 9.64771 0.390137C9.87964 0.650272 10.0078 0.986931 10.0078 1.33545C10.0078 1.68397 9.87964 2.02014 9.6477 2.28027L2.9687 9.50049L9.6477 16.7305C9.87954 16.9887 10.0078 17.3234 10.0078 17.6704C10.0078 18.0174 9.87954 18.3521 9.6477 18.6104C9.5385 18.733 9.40457 18.8312 9.25471 18.8984C9.10485 18.9657 8.94247 19.0005 8.77821 19.0005C8.61396 19.0005 8.45156 18.9657 8.3017 18.8984C8.15184 18.8312 8.01791 18.733 7.90871 18.6104L0.361709 10.4502C0.129234 10.1884 0.00110679 9.85059 0.00170857 9.50049C-0.000526828 9.15308 0.127981 8.8171 0.361709 8.56006Z" fill="#C7C7C7"/>
+  </symbol>
+</svg>
+<script src="js/script.js"></script>
+</body>
+</html>

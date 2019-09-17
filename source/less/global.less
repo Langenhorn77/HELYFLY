@@ -1,0 +1,76 @@
+body {
+  font-family: "Montserrat", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #37373F;
+  min-width: 320px;
+  margin: 0;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 320px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-more {
+  width: 126px;
+  height: 19px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #5286EC;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.overlay-show {
+  display: block;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.disabled {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1160px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

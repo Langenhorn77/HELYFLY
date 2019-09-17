@@ -1,0 +1,39 @@
+.payment {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  width: 135px;
+  margin: 0;
+}
+
+.payment__link {
+  display: flex;
+  width: 34px;
+  height: 23px;
+  align-items: center;
+}
+
+@media (min-width: @desktop-width) {
+  .payment {
+    width: 98px;
+    margin-left: 67px;
+    margin-top: 6px;
+  }
+
+  .payment li:nth-child(3) {
+    display: none;
+  }
+
+  .payment__link {
+    display: flex;
+    width: 39px;
+    height: 26px;
+    align-items: center;
+  }
+
+  .payment__link img {
+    width: 39px;
+    height: 26px;
+  }
+}

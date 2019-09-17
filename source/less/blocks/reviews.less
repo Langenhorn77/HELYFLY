@@ -1,0 +1,250 @@
+.reviews__name {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 38px;
+  margin-bottom: 42px;
+}
+
+.reviews__name span {
+  display: none;
+}
+
+.reviews__list {
+  list-style: none;
+  padding: 0;
+}
+
+.reviews__item {
+  padding-bottom: 25px;
+  border-bottom: 0.5px solid #C7C7C7;
+  margin-bottom: 30px;
+}
+
+.reviews__item--third {
+  display: none;
+}
+
+.reviews__item-user {
+  display: flex;
+  margin-bottom: 23px;
+  position: relative;
+}
+
+.reviews__item-user::before {
+  content: "";
+  position: absolute;
+  width: 118px;
+  height: 17px;
+  background-image: url("../img/stars.svg");
+  bottom: 6px;
+  left: 103px;
+}
+
+.reviews__wrapper {
+  width: 170px;
+  margin-left: 19px;
+}
+
+.reviews__user-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 6px;
+}
+
+.reviews__user-work {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  margin-top: 6px;
+}
+
+.reviews__again {
+  width: 289px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #B3B3B3;
+
+  border: none;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.reviews__again::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/check.svg");
+  top: 2px;
+  left: 0;
+  width: 17px;
+  height: 15px;
+}
+
+.reviews__comment {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 38px;
+}
+
+.reviews__comment--second {
+  margin-bottom: 18px;
+}
+
+.reviews__date {
+  font-size: 14px;
+  line-height: 21px;
+  color: #B3B3B3;
+}
+
+.reviews__show {
+  width: 165px;
+  position: relative;
+  text-align: center;
+  font-size: 17px;
+  line-height: 25px;
+  margin-left: 55px;
+  margin-top: 5px;
+}
+
+.reviews__show::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -12px;
+  width: 6px;
+  height: 11px;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 6px 11px;
+  transform: rotate(180deg);
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__name {
+    font-size: 20px;
+    line-height: 29px;
+    text-align: left;
+    margin-top: 123px;
+    margin-bottom: 44px;
+  }
+
+  .reviews__name span {
+    display: inline;
+  }
+
+  .reviews__list {
+    width: 630px;
+  }
+
+  .reviews__item {
+    padding-bottom: 14px;
+    margin-bottom: 27px;
+    position: relative;
+  }
+
+  .reviews__item--third {
+    display: block;
+  }
+
+  .reviews__item-user {
+    margin-bottom: 15px;
+  }
+
+  .reviews__item-user img {
+    width: 101px;
+    height: 101px;
+  }
+
+  .reviews__item-user::before {
+    left: 118px;
+  }
+
+  .reviews__wrapper {
+    width: 200px;
+    margin-left: 19px;
+  }
+
+  .reviews__user-name {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 13px;
+  }
+
+  .reviews__user-work {
+    margin-top: 10px;
+  }
+
+  .reviews__again {
+    width: 285px;
+    position: absolute;
+    top: 75px;
+    right: 58px;
+  }
+
+  .reviews__comment {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 17px;
+    margin-left: 120px;
+  }
+
+  .reviews__comment--second {
+    margin-bottom: 18px;
+  }
+
+  .reviews__date {
+    margin-left: 120px;
+  }
+
+  .reviews__item--third {
+    padding-bottom: 5px;
+  }
+
+  .reviews__item--third .reviews__comment {
+    margin-top: 0;
+  }
+
+  .reviews__item--third .reviews__again {
+    top: 53px;
+    right: 58px;
+  }
+
+  .reviews__item--third .reviews__item-user {
+    margin-bottom: -5px;
+  }
+
+  .reviews__item--third .reviews__item-user::before {
+    bottom: 29px;
+  }
+
+  .reviews__show {
+    width: 165px;
+    margin-left: 488px;
+    margin-top: 15px;
+  }
+
+  .reviews__show::before {
+    top: 8px;
+    right: -15px;
+    transform: rotate(270deg);
+  }
+
+  .reviews__show::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -15px;
+    width: 6px;
+    height: 11px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 6px 11px;
+    transform: rotate(270deg);
+  }
+}

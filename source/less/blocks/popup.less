@@ -1,0 +1,246 @@
+.popup__window {
+  position: fixed;
+  top: 5px;
+  left: calc(50% - 145px);
+  width: 290px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 33px 10px 36px 10px;
+
+  background-color: #FFFFFF;
+  border-radius: 6px;
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+
+  display: none;
+  z-index: 300;
+  overflow: auto;
+}
+
+.popup-error {
+  border: 1px solid red;
+}
+
+.popup__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.popup__close {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  width: 17px;
+  height: 17px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/cross.svg");
+}
+
+
+.popup-show {
+  display: block;
+}
+
+.popup__form {
+  margin-top: 30px;
+}
+
+.popup__form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__date {
+  position: relative;
+}
+
+.popup__date::before {
+  content: "";
+  position: absolute;
+  top: 39px;
+  right: 11px;
+  width: 27px;
+  height: 27px;
+  border: 0.5px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/calendar.svg");
+}
+
+.popup__form-item:nth-child(5),
+.popup__form-item:nth-child(6) {
+  margin-top: 21px;
+}
+
+.popup__form-item label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.popup__form-item span {
+  color: crimson;
+}
+
+.popup__form-item input {
+  height: 44px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.popup__form-item input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.popup__form-item:nth-child(2) input::placeholder,
+.popup__form-item--card input::placeholder {
+  color: #C7C7C7;
+}
+
+.popup__form-item--card input {
+  height: 48px;
+}
+
+.popup__form-item--card input:nth-child(3),
+.popup__form-item--card input:nth-child(4) {
+  margin-top: -1px;
+}
+
+.popup__form-item--check {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 25px;
+}
+
+.popup__form-item--check label {
+  width: 227px;
+  margin-left: 26px;
+}
+
+.popup__checkbox + label .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+
+  background-color: #FC9B09;
+  box-shadow: 0px 0px 3px rgba(201, 64, 66, 0.6);
+  border-radius: 2px;
+
+}
+
+.popup__checkbox:checked + label .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #FC9B09;
+  box-shadow: 0px 0px 3px rgba(201, 64, 66, 0.6);
+  border-radius: 2px;
+  background-image: url("../img/check-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popup__form-button {
+  width: 250px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  background: #FC9B09;
+  border-radius: 3px;
+  border: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+@media (min-width: @desktop-width) {
+  .popup__window {
+    width: 616px;
+    height: 100%;
+    padding: 40px 99px 36px 96px;
+  }
+
+  .popup__name {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .popup__form {
+    margin-top: 27px;
+  }
+
+  .popup__form-item {
+    margin: 0;
+    margin-bottom: 9px;
+  }
+
+  .popup__form-item:nth-child(5) {
+    margin-top: 13px;
+  }
+
+  .popup__form-item:nth-child(6) {
+    margin-top: 10px;
+  }
+
+  .popup__form-item--card {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .popup__form-item--card label {
+    width: 400px;
+  }
+
+  .popup__form-item--card input {
+    height: 44px;
+    width: 210px;
+  }
+  .popup__form-item--card input:nth-child(2) {
+    width: 420px;
+  }
+
+  .popup__form-item--card input:nth-child(4) {
+    margin-left: -1px;
+  }
+
+  .popup__form-item--check {
+    margin-top: 35px;
+    margin-bottom: 12px;
+  }
+
+  .popup__form-item--check label {
+    width: 350px;
+  }
+
+
+  .popup__form-button {
+    width: 390px;
+    height: 72px;
+    box-sizing: border-box;
+    margin-left: 12px;
+    margin-right: 13px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

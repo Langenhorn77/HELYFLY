@@ -1,0 +1,164 @@
+.exclusive {
+  width: 100%;
+  height: 540px;
+  padding-top: 115px;
+  background-image: url("../img/BG-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.exclusive__name {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+
+  width: 264px;
+  margin-bottom: 35px;
+}
+
+.exclusive__name span {
+  color: #FC9B09;
+}
+
+.exclusive__price {
+  width: 200px;
+  height: 76px;
+  box-sizing: border-box;
+  padding-left: 17px;
+
+  background-color: #FC9B09;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  display: flex;
+  position: relative;
+}
+
+.exclusive__price::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  border: 10px solid transparent;
+  border-top: 10px solid #FC9B09;
+
+  width: 20px;
+  height: 20px;
+  bottom: -20px;
+  left: 110px;
+}
+
+.exclusive__price-number {
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 113px;
+  margin-top: 9px;
+}
+
+.exclusive__price-number span {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.exclusive__price-percent {
+  font-weight: 800;
+  font-size: 30px;
+  color: #FFFFFF;
+  position: relative;
+  margin-left: 19px;
+}
+
+.exclusive__price-percent::before {
+  content: "";
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  top: -14px;
+  left: -12px;
+}
+
+.exclusive__booking {
+  width: 275px;
+  height: 68px;
+  margin-top: 24px;
+
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25), 0 4px 70px rgba(255, 255, 255, 0.7);
+  border-radius: 7px;
+
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+@media (min-width: @mobile-more) {
+  .exclusive {
+    background-image: url("../img/BG.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    /*background-size: 100%;*/
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .exclusive {
+    height: 725px;
+    padding-top: 254px;
+  }
+
+  .exclusive__name {
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+
+    width: 887px;
+    margin-bottom: 18px;
+  }
+
+  .exclusive__price {
+    width: 223px;
+    height: 86px;
+    padding-left: 23px;
+  }
+
+  .exclusive__price::before {
+    left: 125px;
+  }
+
+  .exclusive__price-number {
+    font-size: 20px;
+    width: 113px;
+    margin-top: 12px;
+  }
+
+  .exclusive__price-number span {
+    font-size: 35px;
+    line-height: 38px;
+  }
+
+  .exclusive__price-percent {
+    font-size: 35px;
+    margin-left: 17px;
+    margin-top: 30px;
+  }
+
+  .exclusive__price-percent::before {
+    width: 52px;
+    height: 52px;
+    top: -14px;
+    left: -11px;
+  }
+
+  .exclusive__booking {
+    width: 304px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
